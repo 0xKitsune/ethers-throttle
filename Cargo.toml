@@ -3,6 +3,15 @@ name = "ethers-throttle"
 version = "0.1.0"
 edition = "2021"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
 [dependencies]
+async-trait = "0.1.74"
+ethers = "2.0.10"
+governor = "0.6.0"
+serde = { version = "1.0.189", features = ["derive"] }
+
+[dev-dependencies]
+tokio = { version = "1.33.0", features = ["full"] }
+eyre = "0.6.8"
+url = "2.4.1"
+
+
