@@ -1,9 +1,9 @@
 use std::num::NonZeroU32;
-use std::string::ParseError;
+
 use std::sync::Arc;
 
 use async_trait::async_trait;
-use ethers::providers::{JsonRpcClient, ProviderError};
+use ethers::providers::JsonRpcClient;
 use governor::clock::{QuantaClock, QuantaInstant};
 use governor::middleware::NoOpMiddleware;
 use governor::state::{InMemoryState, NotKeyed};
